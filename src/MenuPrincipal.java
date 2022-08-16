@@ -46,28 +46,37 @@ public class MenuPrincipal {
     }
 
     public void mostrarModuloUsuarios() {
-        while (mod2 != 4) {
+        RutinaRegistroUsuarios ru = new RutinaRegistroUsuarios();
+        while (mod2 != 5) {
             mod2 = Integer.parseInt(JOptionPane.showInputDialog(null,
                     "   MODULO DE REGISTRO DE USUARIOS   \n\n"
                             + "1. Agregar Usuario / Cliente\n"
-                            + "2. Ver Usuario / Cliente\n"
-                            + "3. Inactivar Usuario / Cliente\n"
-                            + "4. Regresar\n\n"
+                            + "2. Mostrar Usuarios / Clientes\n"
+                            + "3. Buscar Usuarios / Clientes\n"
+                            + "4. Inactivar Usuario / Cliente\n"
+                            + "5. Regresar\n\n"
                             + "Digite su opción:"));
             switch (mod2) {
                 case 1: {
                     JOptionPane.showMessageDialog(null, "AGREGAR USUARIO / CLIENTE");
+                    ru.llenarArregloRegistroUsuarioCliente();
                     break;
                 }
                 case 2: {
-                    JOptionPane.showMessageDialog(null, "VER USUARIO / CLIENTE");
+                    JOptionPane.showMessageDialog(null, "MOSTRAR USUARIOS / CLIENTES");
+                    ru.mostrarArregloRegistroUsuarioCliente();
                     break;
                 }
                 case 3:{
-                    JOptionPane.showMessageDialog(null, "INACTIVAR USUARIO / CLIENTE");
+                    JOptionPane.showMessageDialog(null, "BUSCAR USUARIO / CLIENTE");
+                    ru.consultarUsuarioCliente();
                     break;
                 }
                 case 4:{
+                    JOptionPane.showMessageDialog(null, "INACTIVAR USUARIO / CLIENTE");
+                    break;
+                }
+                case 5:{
                     mostrarMenu();
                     break;
                 }
@@ -81,14 +90,13 @@ public class MenuPrincipal {
     public void mostrarModuloCatalogos() {
         RutinaCatalogos rc = new RutinaCatalogos();
         int x;
-        while (mod3 != 5) {
+        while (mod3 != 4) {
             mod3 = Integer.parseInt(JOptionPane.showInputDialog(null,
                     "   MODULO DE CATALOGOS   \n\n"
                             + "1. Agregar Catalogos\n"
                             + "2. Mostrar Catalogos\n"
-                            + "3. Buscar Catalogos\n"
-                            + "4. Inactivar Catalogos\n"
-                            + "5. Regresar\n\n"
+                            + "3. Inactivar Catalogos\n"
+                            + "4. Regresar\n\n"
                             + "Digite su opción:"));
             switch (mod3) {
                 case 1: {
@@ -122,14 +130,10 @@ public class MenuPrincipal {
                     break;
                 }
                 case 3:{
-                    JOptionPane.showMessageDialog(null, "BUSCAR CATALOGOS");
-                    break;
-                }
-                case 4:{
                     JOptionPane.showMessageDialog(null, "INACTIVAR CATALOGOS");
                     break;
                 }
-                case 5:{
+                case 4:{
                     mostrarMenu();
                     break;
                 }
@@ -141,12 +145,13 @@ public class MenuPrincipal {
         }
     }
     public void mostrarModuloFacturas(){
-        while (mod4!=5){
+        RutinaFactura rf = new RutinaFactura();
+        while (mod4!=4){
             mod4=Integer.parseInt(JOptionPane.showInputDialog(null,
                     "   MODULO DE FACTURAS   \n\n"
             +"1. Emitir facturas\n"
-            +"2. Anular facturas\n"
-            +"3. Mostrar facturas\n"
+            +"2. Mostrar facturas\n"
+            +"3. Anular facturas\n"
             +"4. Regresar\n\n"
             +"Digite su opcion: "));
 
@@ -154,14 +159,17 @@ public class MenuPrincipal {
 
                 case 1:{
                     JOptionPane.showMessageDialog(null, "EMITIR FACTURAS");
+                    rf.emitirFactura();
                     break;
                 }
                 case 2:{
-                    JOptionPane.showMessageDialog(null,"ANULAR FACTURAS");
+                    JOptionPane.showMessageDialog(null,"MOSTRAR FACTURAS");
+                    rf.mostrarFacturas();
                     break;
                 }
                 case 3:{
-                    JOptionPane.showMessageDialog(null,"MOSTRAR FACTURAS");
+                    JOptionPane.showMessageDialog(null,"ANULAR FACTURAS");
+                    break;
                 }
                 case 4:{
                     mostrarMenu();
