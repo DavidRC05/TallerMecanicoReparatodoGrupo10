@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dd10972a-aae1-4ce6-9cd8-5b01f093ca6b" name="Changes" comment="commit">
-      <change afterPath="$PROJECT_DIR$/src/RUsuarioCliente.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/RutinaRegistroUsuarios.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Cajas.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MenuPrincipal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MenuPrincipal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/RutinaCajas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RutinaCajas.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RutinaFactura.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RutinaFactura.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,7 +123,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660624282529</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="commit">
+      <created>1660676290428</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1660676290428</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
