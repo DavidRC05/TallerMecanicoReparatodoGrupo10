@@ -57,7 +57,7 @@ public void consultarUsuarioCliente(){
     }
 public void inactivarUsuarioCliente(){
         int opc;
-        JOptionPane.showMessageDialog(null,"INACTIVACION DE CLIENTES");
+        JOptionPane.showMessageDialog(null,"INACTIVACION DE USUARIOS / CLIENTES");
         opc=Integer.parseInt(JOptionPane.showInputDialog(null,"Digite el numero de Usuario / Cliente que desea inactivar\n\n"+
                 "1. Usuario / Cliente #1\n"+
                 "2. Usuario / Cliente #2\n"+

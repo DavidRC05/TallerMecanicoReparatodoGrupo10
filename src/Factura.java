@@ -2,26 +2,26 @@ public class Factura {
     private String fecha;
     private String hora;
     private String nombreClienteF;
-    private long monto;
+    private double monto;
 
     public Factura(){
         this.fecha="";
         this.hora="";
         this.nombreClienteF="";
-        this.monto = 0;
+        this.monto = 0.00;
     }
-    public Factura(String nombreClienteF,String fecha, String hora, long monto){
+    public Factura(String nombreClienteF,String fecha, String hora, double monto){
         this.nombreClienteF=nombreClienteF;
         this.monto=monto;
         this.fecha=fecha;
         this.hora=hora;
     }
 
-    public long getMonto() {
+    public double getMonto() {
         return monto;
     }
 
-    public void setMonto(long monto) {
+    public void setMonto(double monto) {
         this.monto = monto;
     }
 
