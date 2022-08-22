@@ -44,7 +44,6 @@ public class MenuPrincipal {
             }
         }
     }
-
     public void mostrarModuloUsuarios() {
         RutinaRegistroUsuarios ru = new RutinaRegistroUsuarios();
         while (mod2 != 5) {
@@ -74,6 +73,7 @@ public class MenuPrincipal {
                 }
                 case 4:{
                     JOptionPane.showMessageDialog(null, "INACTIVAR USUARIO / CLIENTE");
+                    ru.inactivarUsuarioCliente();
                     break;
                 }
                 case 5:{
@@ -90,13 +90,16 @@ public class MenuPrincipal {
     public void mostrarModuloCatalogos() {
         RutinaCatalogos rc = new RutinaCatalogos();
         int x;
-        while (mod3 != 4) {
+        int y;
+        int z;
+        while (mod3 != 5) {
             mod3 = Integer.parseInt(JOptionPane.showInputDialog(null,
                     "   MODULO DE CATALOGOS   \n\n"
                             + "1. Agregar Catalogos\n"
                             + "2. Mostrar Catalogos\n"
-                            + "3. Inactivar Catalogos\n"
-                            + "4. Regresar\n\n"
+                            + "3. Editar Catalogos\n"
+                            + "4. Inactivar Catalogos\n"
+                            + "5. Regresar\n\n"
                             + "Digite su opción:"));
             switch (mod3) {
                 case 1: {
@@ -130,10 +133,42 @@ public class MenuPrincipal {
                     break;
                 }
                 case 3:{
-                    JOptionPane.showMessageDialog(null, "INACTIVAR CATALOGOS");
+                    JOptionPane.showMessageDialog(null, "EDITAR CATALOGOS");
+                    y=Integer.parseInt(JOptionPane.showInputDialog(null,
+                            "Digite 1 para editar el catalogo de Operarios / Clientes\n"
+                                    +"Digite 2 para editar el catalogo de Vehiculos\n"
+                                    +"Digite 3 para editar el catalogo de Reparaciones\n"
+                                    +"Digite un numero diferente para salir\n\n"+": "));
+                    if (y==1){
+                        rc.editarArregloOpeCli();
+                    }else if (y==2){
+                        rc.editarArregloVehiculo();
+                    }else if (y==3){
+                        rc.editarArregloReparacion();
+                    }else{
+                        break;
+                    }
                     break;
                 }
                 case 4:{
+                    JOptionPane.showMessageDialog(null, "INACTIVAR CATALOGOS");
+                    z=Integer.parseInt(JOptionPane.showInputDialog(null,
+                            "Digite 1 para inactivar el catalogo de Operarios / Clientes\n"
+                                    +"Digite 2 para inactivar el catalogo de Vehiculos\n"
+                                    +"Digite 3 para inactivar el catalogo de Reparaciones\n"
+                                    +"Digite un numero diferente para salir\n\n"+": "));
+                    if (z==1){
+                        rc.inactivarArregloOpeCli();
+                    }else if (z==2){
+                        rc.inactivarArregloVehiculo();
+                    }else if (z==3){
+                        rc.inactivarArregloReparacion();
+                    }else{
+                        break;
+                    }
+                    break;
+                }
+                case 5:{
                     mostrarMenu();
                     break;
                 }

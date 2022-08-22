@@ -15,9 +15,8 @@ public void llenarArregloRegistroUsuarioCliente(){
         ruc.setContraseña(JOptionPane.showInputDialog(null, "Digite la contraseña del Usuario / Cliente #" + (x + 1) + ": "));
         ruc.setEstado(JOptionPane.showInputDialog(null, "Digite el estado del Usuario / Cliente #" + (x + 1) + ": "));
         arregloRegistroUsuarioCliente[x] = ruc;
-
+        }
     }
-}
 public void mostrarArregloRegistroUsuarioCliente(){
     JOptionPane.showMessageDialog(null,"USUARIOS / CLIENTE REGISTRADOS");
     int x;
@@ -35,13 +34,11 @@ public void mostrarArregloRegistroUsuarioCliente(){
 }
 
 
-
-
 public void consultarUsuarioCliente(){
         int x;
         String s="";
         String nomb;
-        JOptionPane.showMessageDialog(null, "BUSCAR PERSONAS");
+        JOptionPane.showMessageDialog(null, "BUSCADOR DE USUARIOS / CLIENTES");
         nomb=JOptionPane.showInputDialog(null,
                 "Digite el nombre del Usuario / Cliente a buscar:");
         for(x=0;x<arregloRegistroUsuarioCliente.length;x++){
@@ -57,5 +54,27 @@ public void consultarUsuarioCliente(){
                 JOptionPane.showMessageDialog(null, "RESULTADO DE LA BUSQUEDA\n\n"+s);
             }
         }
+    }
+public void inactivarUsuarioCliente(){
+        int opc;
+        JOptionPane.showMessageDialog(null,"INACTIVACION DE CLIENTES");
+        opc=Integer.parseInt(JOptionPane.showInputDialog(null,"Digite el numero de Usuario / Cliente que desea inactivar\n\n"+
+                "1. Usuario / Cliente #1\n"+
+                "2. Usuario / Cliente #2\n"+
+                "3. Usuario / Cliente #3\n"));
+        while(opc<1 || opc>3){
+            opc=Integer.parseInt(JOptionPane.showInputDialog(null,"PORFAVOR DIGITE UNA OPCION CORRECTA!\n"+
+                    "Digite el numero de Usuario / Cliente que desea inactivar\n\n"+
+                    "1. Usuario / Cliente #1\n"+
+                    "2. Usuario / Cliente #2\n"+
+                    "3. Usuario / Cliente #3\n"));
+        }
+    RUsuarioCliente ruc = new RUsuarioCliente();
+    ruc.setNickname("INACTIVO");
+    ruc.setTipo("INACTIVO");
+    ruc.setContraseña("INACTIVO");
+    ruc.setEstado("INACTIVO");
+    arregloRegistroUsuarioCliente[opc-1] = ruc;
+
     }
 }
