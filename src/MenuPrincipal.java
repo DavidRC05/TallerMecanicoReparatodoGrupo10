@@ -223,9 +223,8 @@ public class MenuPrincipal {
         while (mod5!=2){
             mod5=Integer.parseInt(JOptionPane.showInputDialog(null,
                     "   MODULO DE CAJAS   \n\n"
-            +"1. Sumar ingresos del dia\n"
-            +"2. Mostrar ingresos del dia\n"
-            +"3. Regresar\n\n"));
+            +"1. Mostrar ingresos del dia\n"
+                            +"2. Regresar\n\n"));
 
             switch (mod5){
 
