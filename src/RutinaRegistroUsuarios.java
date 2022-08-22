@@ -70,6 +70,8 @@ public void inactivarUsuarioCliente(){
                     "3. Usuario / Cliente #3\n"));
         }
     RUsuarioCliente ruc = new RUsuarioCliente();
+    ruc.setNombreUC("INACTIVO");
+    ruc.setApellidos("INACTIVO");
     ruc.setNickname("INACTIVO");
     ruc.setTipo("INACTIVO");
     ruc.setContraseña("INACTIVO");

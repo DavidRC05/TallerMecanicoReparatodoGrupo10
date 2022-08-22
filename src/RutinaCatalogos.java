@@ -221,6 +221,7 @@ public class RutinaCatalogos {
                     "5. Catalogo de vehiculo #5"));
         }
         Vehiculo v = new Vehiculo();
+        v.setMarca("INACTIVO");
         v.setEstilo("INACTIVO");
         v.setPaisDeOrigen("INACTIVO");
         v.setCaracteristicas("INACTIVO");
@@ -246,6 +247,8 @@ public class RutinaCatalogos {
                     "5. Catalogo de Operario / Cliente #5"));
         }
         OperarioCliente p = new OperarioCliente();
+        p.setNombre("INACTIVO");
+        p.setApellidos("INACTIVO");
         p.setCiudad("INACTIVO");
         p.setDireccion("INACTIVO");
         p.setTelefono(0);
