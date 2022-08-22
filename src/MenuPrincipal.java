@@ -204,6 +204,7 @@ public class MenuPrincipal {
                 }
                 case 3:{
                     JOptionPane.showMessageDialog(null,"ANULAR FACTURAS");
+                    rf.anularFacturas();
                     break;
                 }
                 case 4:{
@@ -218,7 +219,8 @@ public class MenuPrincipal {
         }
     }
     public void mostarModuloCajas(){
-        while (mod5!=3){
+        RutinaFactura ing = new RutinaFactura();
+        while (mod5!=2){
             mod5=Integer.parseInt(JOptionPane.showInputDialog(null,
                     "   MODULO DE CAJAS   \n\n"
             +"1. Sumar ingresos del dia\n"
@@ -228,14 +230,11 @@ public class MenuPrincipal {
             switch (mod5){
 
                 case 1:{
-                    JOptionPane.showMessageDialog(null, "SUMA DE INGRESOS");
+                    JOptionPane.showMessageDialog(null, "MOSTRAR INGRESOS");
+                    ing.mostrarIngresoFinal();
                     break;
                 }
                 case 2:{
-                    JOptionPane.showMessageDialog(null, "MOSTRAR INGRESOS");
-                    break;
-                }
-                case 3:{
                     mostrarMenu();
                     break;
                 }

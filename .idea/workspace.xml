@@ -3,9 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="dd10972a-aae1-4ce6-9cd8-5b01f093ca6b" name="Changes" comment="commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Factura.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Factura.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Cajas.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MenuPrincipal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MenuPrincipal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RutinaCajas.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/RutinaFactura.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RutinaFactura.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RutinaRegistroUsuarios.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RutinaRegistroUsuarios.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,7 +153,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661158171195</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="commit">
+      <created>1661158819125</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1661158819125</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -181,5 +189,16 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="commit" />
     <option name="LAST_COMMIT_MESSAGE" value="commit" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/MenuPrincipal.java</url>
+          <line>5</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

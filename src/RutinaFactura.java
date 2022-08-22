@@ -51,4 +51,19 @@ public class RutinaFactura {
         f.setMonto(0.00);
         arregloFactura[opc-1] = f;
     }
+    public void mostrarIngresoFinal(){
+        int cantClientes= arregloFactura.length;
+        double sumador=0.00;
+        double ingresoFinal=0.00;
+        for (int x=0;x<arregloFactura.length;x++){
+            sumador=sumador+arregloFactura[x].getMonto();
+
+        }
+        ingresoFinal=sumador;
+        JOptionPane.showMessageDialog(null,"INGRESOS DEL DIA");
+        JOptionPane.showMessageDialog(null,"Resumen del dia\n\n"+
+                "Ingresos totales: "+ingresoFinal+"\nCantidad de clientes atendidos: "+cantClientes);
+
+
+    }
 }
