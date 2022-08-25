@@ -200,6 +200,7 @@ public class MenuPrincipal {
                 case 2:{
                     JOptionPane.showMessageDialog(null,"MOSTRAR FACTURAS");
                     rf.mostrarFacturas();
+                    rf.mostrarIngresoFinal();
                     break;
                 }
                 case 3:{
